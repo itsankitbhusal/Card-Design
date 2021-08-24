@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+}
+.container{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.canvas{
+    position: relative;
+    margin: 5rem 5rem;
+    background-color: hsl(225, 100%, 94%);
+    box-shadow: 0px 10px 30px rgb(233, 233, 233);
+    width: 80vw;
+}
+#hero-img{
+    position: absolute;
+    height: 50%;
+
+}
+.card-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    margin: 5rem;
+    width: 30rem;
+    height: 650px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 30px rgb(233, 233, 233);
+    z-index: 1;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+.des{
+    text-align: center;
+    margin: 2rem 1.5rem;
+    text-align: justify center;
+}
+.des h2{
+    margin-bottom: 1rem;
+    font-size: 1.7em;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.plan-rt img{
+    width: 25%;
+}
+.des p{
+    font-size: 1.2em;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+.plan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(241, 241, 241, 0.281);
+}
+.plan h5{
+    margin-right: 2rem;
+    color: hsl(245, 75%, 52%);
+    cursor: pointer;
+}
+.plan-in{
+    color: hsl(223, 47%, 23%);
+}
+.plan-rt{
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+.btn{
+    margin: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn  .primary-btn{
+    cursor: pointer;
+    border: none;
+    border-radius: .5rem;
+    width: 100%;
+    margin: .5rem 0;
+    padding: .8rem 1rem;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-size: 1em;
+    box-shadow: 0px 10px 20px rgb(212, 212, 212);
+}
+.btn .sec-btn{
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    margin: .5rem 0;
+    padding: .8rem 1rem;
+    font-weight: 600;
+    color: hsl(223, 47%, 43%);
+    font-size: 1em;
+}
+@media only screen and (max-width: 768px){
+    .card{
+        height: 680px;
+    }
+
+}
+@media only screen and (max-width: 425px){
+    body{
+        font-size: .5em;
+    }
+    .card{
+        height: 430px;
+    }
+    .canvas{
+        margin: 0;
+        width: 100%;
+    }
+    .plan{
+        margin: 0;
+    }
+
+}
